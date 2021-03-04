@@ -1,0 +1,53 @@
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 8rem 2rem 2rem 2rem;
+  margin: 0 3rem;
+  position: relative;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+
+  @include respond(desktop) {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 5rem;
+  }
+
+  // IMAGE BOX MOBILE
+  .image-box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    &__platform {
+      position: absolute;
+      transform: translate(-55%, -55%);
+    }
+    &__cube {
+      display: none;
+    }
+  }
+
+  // IMAGE BOX DESKTOP
+  @include respond(desktop) {
+    .image-box {
+      flex: 1;
+      position: relative;
+      display: block;
+      left: 0;
+
+      &__platform {
+        position: absolute;
+        width: 134%;
+        top: 50%;
+        transform: translate(-44%, -50%);
+      }
+      &__cube {
+        width: 50%;
+        position: absolute;
+        top: 39%;
+        left: -59%;
+        display: block;
+      }
+    }
+  }
+}

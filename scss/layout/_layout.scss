@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  background-image: linear-gradient($color-soft-violet, $color-soft-blue);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  @include respond(desktop) {
+    width: 75%;
+  }
+}
+
+.attribution {
+  padding: 0.5rem;
+  display: inline-block;
+  margin-top: 5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: orangered;
+  bottom: 0;
+  color: white;
+
+  a {
+    &:link,
+    &:visited {
+      cursor: pointer;
+      font-weight: 700;
+      text-decoration: none;
+      color: black;
+    }
+    &:hover {
+      color: #ddd;
+    }
+  }
+}
