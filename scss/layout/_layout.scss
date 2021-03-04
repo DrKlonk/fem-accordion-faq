@@ -14,7 +14,7 @@ body {
   align-items: center;
   height: 100%;
 
-  @include respond(desktop) {
+  @media only screen and (min-width: 56.25em) {
     width: 75%;
   }
 }

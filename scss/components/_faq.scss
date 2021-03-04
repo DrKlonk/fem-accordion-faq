@@ -1,7 +1,4 @@
 .faq {
-  @include respond(desktop) {
-    flex: 1;
-  }
   &__title {
     text-align: center;
     margin-bottom: 2rem;
