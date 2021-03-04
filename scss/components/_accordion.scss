@@ -16,6 +16,7 @@
     width: 100%;
     outline: none;
     cursor: pointer;
+    text-align: left;
 
     display: flex;
     justify-content: space-between;
@@ -40,9 +41,10 @@
   &__item-content {
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    transition: max-height 0.3s ease-out;
     width: 90%;
     color: $color-text-dark-blue-light;
+    line-height: 1.5rem;
   }
 
   &__item-heading.active .accordion__item-chevron {
@@ -51,7 +53,7 @@
 
   &__item-heading.active + .accordion__item-content {
     p {
-      padding-bottom: 1rem;
+      margin-bottom: 1rem;
     }
   }
 }
